@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		DE883742248FBE0A00F04040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE883741248FBE0A00F04040 /* AppDelegate.swift */; };
 		DE883744248FBE0A00F04040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE883743248FBE0A00F04040 /* SceneDelegate.swift */; };
-		DE883746248FBE0A00F04040 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE883745248FBE0A00F04040 /* FirstViewController.swift */; };
-		DE883748248FBE0A00F04040 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE883747248FBE0A00F04040 /* SecondViewController.swift */; };
 		DE88374B248FBE0A00F04040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE883749248FBE0A00F04040 /* Main.storyboard */; };
 		DE88374D248FBE0E00F04040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE88374C248FBE0E00F04040 /* Assets.xcassets */; };
 		DE883750248FBE0E00F04040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE88374E248FBE0E00F04040 /* LaunchScreen.storyboard */; };
+		DE883759249107E200F04040 /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE883758249107E200F04040 /* RecipesListViewController.swift */; };
+		DE88375B249107F900F04040 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE88375A249107F900F04040 /* FavouritesViewController.swift */; };
+		DE8837642495805300F04040 /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8837632495805300F04040 /* Burger.swift */; };
+		DE8837662495815D00F04040 /* BurgerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8837652495815D00F04040 /* BurgerModel.swift */; };
+		DE88376A249598C900F04040 /* BurgerResources in Resources */ = {isa = PBXBuildFile; fileRef = DE883769249598C900F04040 /* BurgerResources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE88373E248FBE0A00F04040 /* BurgerRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE883741248FBE0A00F04040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE883743248FBE0A00F04040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE883745248FBE0A00F04040 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DE883747248FBE0A00F04040 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		DE88374A248FBE0A00F04040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE88374C248FBE0E00F04040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE88374F248FBE0E00F04040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE883751248FBE0E00F04040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE883758249107E200F04040 /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
+		DE88375A249107F900F04040 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		DE8837632495805300F04040 /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
+		DE8837652495815D00F04040 /* BurgerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerModel.swift; sourceTree = "<group>"; };
+		DE883769249598C900F04040 /* BurgerResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BurgerResources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,35 @@
 		DE883740248FBE0A00F04040 /* BurgerRecipe */ = {
 			isa = PBXGroup;
 			children = (
+				DE8837622495804500F04040 /* Model */,
 				DE883741248FBE0A00F04040 /* AppDelegate.swift */,
 				DE883743248FBE0A00F04040 /* SceneDelegate.swift */,
-				DE883745248FBE0A00F04040 /* FirstViewController.swift */,
-				DE883747248FBE0A00F04040 /* SecondViewController.swift */,
 				DE883749248FBE0A00F04040 /* Main.storyboard */,
+				DE883758249107E200F04040 /* RecipesListViewController.swift */,
+				DE88375A249107F900F04040 /* FavouritesViewController.swift */,
+				DE883757248FBFBC00F04040 /* Supporting Files */,
+			);
+			path = BurgerRecipe;
+			sourceTree = "<group>";
+		};
+		DE883757248FBFBC00F04040 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE883769249598C900F04040 /* BurgerResources */,
 				DE88374C248FBE0E00F04040 /* Assets.xcassets */,
 				DE88374E248FBE0E00F04040 /* LaunchScreen.storyboard */,
 				DE883751248FBE0E00F04040 /* Info.plist */,
 			);
-			path = BurgerRecipe;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE8837622495804500F04040 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE8837632495805300F04040 /* Burger.swift */,
+				DE8837652495815D00F04040 /* BurgerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +155,7 @@
 			files = (
 				DE883750248FBE0E00F04040 /* LaunchScreen.storyboard in Resources */,
 				DE88374D248FBE0E00F04040 /* Assets.xcassets in Resources */,
+				DE88376A249598C900F04040 /* BurgerResources in Resources */,
 				DE88374B248FBE0A00F04040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE883748248FBE0A00F04040 /* SecondViewController.swift in Sources */,
-				DE883746248FBE0A00F04040 /* FirstViewController.swift in Sources */,
+				DE88375B249107F900F04040 /* FavouritesViewController.swift in Sources */,
+				DE8837642495805300F04040 /* Burger.swift in Sources */,
 				DE883742248FBE0A00F04040 /* AppDelegate.swift in Sources */,
 				DE883744248FBE0A00F04040 /* SceneDelegate.swift in Sources */,
+				DE8837662495815D00F04040 /* BurgerModel.swift in Sources */,
+				DE883759249107E200F04040 /* RecipesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BurgerRecipe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BurgerRecipe/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BurgerRecipe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BurgerRecipe/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
